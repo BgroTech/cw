@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import Container from "../ui/Container";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
     { label: "Home", href: "/" },
@@ -70,7 +71,7 @@ export default function Header() {
                 </Link>
 
                 {/* Desktop Navigation - Hidden on mobile */}
-                <nav className="nav-desktop flex gap-8">
+                <nav className="nav-desktop flex gap-8 items-center">
                     {navLinks.map((link) => (
                         <Link 
                             key={link.href} 
@@ -80,20 +81,24 @@ export default function Header() {
                             {link.label}
                         </Link>
                     ))}
+                    <ThemeToggle />
                 </nav>
 
-                {/* Mobile Menu Button - Hidden on desktop */}
-                <button
-                    className="menu-toggle"
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    aria-label="Toggle menu"
-                >
-                    {isMenuOpen ? (
-                        <X size={24} color="hsl(var(--primary))" />
-                    ) : (
-                        <Menu size={24} color="hsl(var(--foreground))" />
-                    )}
-                </button>
+                {/* Mobile Menu & Theme Toggle - Hidden on desktop */}
+                <div className="mobile-controls flex items-center gap-2">
+                    <ThemeToggle />
+                    <button
+                        className="menu-toggle"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        aria-label="Toggle menu"
+                    >
+                        {isMenuOpen ? (
+                            <X size={24} color="hsl(var(--primary))" />
+                        ) : (
+                            <Menu size={24} color="hsl(var(--foreground))" />
+                        )}
+                    </button>
+                </div>
             </Container>
 
             {/* Mobile Dropdown Menu - Only visible on mobile when open */}

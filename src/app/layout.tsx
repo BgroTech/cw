@@ -62,6 +62,23 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Dark Mode Initialization */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const isDark = localStorage.getItem('theme') === 'dark' || 
+                               (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                if (isDark) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              } catch (e) {}
+            `,
+          }}
+          suppressHydrationWarning
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{

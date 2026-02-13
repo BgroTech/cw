@@ -1,68 +1,64 @@
 :root {
-  /* Theme: Sunset Orange & Clean White (Restored) */
-  --primary: 24.6 95% 53.1%;
-  /* Signature Coding Wallah Orange */
-  --primary-foreground: 0 0% 100%;
-
-  --secondary: 30 10% 97%;
-  --secondary-foreground: 24 95% 10%;
-
-  --accent: 35 95% 55%;
-  /* Vivid Gold-Orange */
-  --accent-foreground: 0 0% 100%;
-
-  --background: 0 0% 100%;
-  /* Pure white for that fresh academic feel */
-  --foreground: 24 20% 10%;
-
-  --muted: 24 20% 96%;
-  --muted-foreground: 24 10% 40%;
-
-  --card: 0 0% 100%;
-  --card-foreground: 24 20% 10%;
-
-  --border: 24 15% 90%;
-
-  --success: 142 71% 45%;
-  --success-foreground: 144 70% 98%;
-
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, hsl(24.6 95% 53.1%), hsl(35 95% 55%));
-  --gradient-mesh: radial-gradient(at 0% 0%, hsla(24, 95%, 53%, 0.12) 0, transparent 50%),
-    radial-gradient(at 50% 0%, hsla(35, 95%, 55%, 0.12) 0, transparent 50%),
-    radial-gradient(at 100% 0%, hsla(24, 95%, 53%, 0.12) 0, transparent 50%);
-
-  /* Spacing & Typography */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-4: 1rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --radius: 0.75rem;
-
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+    /* Theme: Sunset Orange & Clean White (Restored) */
+    --primary: 24.6 95% 53.1%;
+    /* Signature Coding Wallah Orange */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 10% 97%;
+    --secondary-foreground: 24 95% 10%;
+    --accent: 35 95% 55%;
+    /* Vivid Gold-Orange */
+    --accent-foreground: 0 0% 100%;
+    --background: 0 0% 100%;
+    /* Pure white for that fresh academic feel */
+    --foreground: 24 20% 10%;
+    --muted: 24 20% 96%;
+    --muted-foreground: 24 10% 40%;
+    --card: 0 0% 100%;
+    --card-foreground: 24 20% 10%;
+    --border: 24 15% 90%;
+    --success: 142 71% 45%;
+    --success-foreground: 144 70% 98%;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(24.6 95% 53.1%), hsl(35 95% 55%));
+    --gradient-mesh: radial-gradient(at 0% 0%, hsla(24, 95%, 53%, 0.12) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(35, 95%, 55%, 0.12) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(24, 95%, 53%, 0.12) 0, transparent 50%);
+    /* Spacing & Typography */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --radius: 0.75rem;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+     :root {
+        --background: 24 20% 4%;
+        --foreground: 24 10% 98%;
+        --muted: 24 20% 12%;
+        --muted-foreground: 24 10% 65%;
+        --card: 24 20% 7%;
+        --card-foreground: 0 0% 100%;
+        --border: 24 20% 15%;
+        --gradient-mesh: radial-gradient(at 0% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(35, 95%, 55%, 0.2) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%);
+    }
+}
+
+
+/* Support explicit dark class */
+
+html.dark {
     --background: 24 20% 4%;
     --foreground: 24 10% 98%;
-
     --muted: 24 20% 12%;
     --muted-foreground: 24 10% 65%;
-
     --card: 24 20% 7%;
     --card-foreground: 0 0% 100%;
-
     --border: 24 20% 15%;
-
-    --gradient-mesh: radial-gradient(at 0% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%),
-      radial-gradient(at 50% 0%, hsla(35, 95%, 55%, 0.2) 0, transparent 50%),
-      radial-gradient(at 100% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%);
-  }
+    --gradient-mesh: radial-gradient(at 0% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(35, 95%, 55%, 0.2) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%);
 }
