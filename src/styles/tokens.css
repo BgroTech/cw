@@ -36,21 +36,12 @@
     --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
 }
 
-@media (prefers-color-scheme: dark) {
-     :root {
-        --background: 24 20% 4%;
-        --foreground: 24 10% 98%;
-        --muted: 24 20% 12%;
-        --muted-foreground: 24 10% 65%;
-        --card: 24 20% 7%;
-        --card-foreground: 0 0% 100%;
-        --border: 24 20% 15%;
-        --gradient-mesh: radial-gradient(at 0% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(35, 95%, 55%, 0.2) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%);
-    }
-}
-
 
 /* Support explicit dark class */
+
+:root {
+    --footer-bg: 24 20% 7%;
+}
 
 html.dark {
     --background: 24 20% 4%;
@@ -61,4 +52,5 @@ html.dark {
     --card-foreground: 0 0% 100%;
     --border: 24 20% 15%;
     --gradient-mesh: radial-gradient(at 0% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(35, 95%, 55%, 0.2) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(24, 95%, 53%, 0.2) 0, transparent 50%);
+    --footer-bg: 24 20% 7%;
 }

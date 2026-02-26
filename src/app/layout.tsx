@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import { SITE_CONFIG } from "@/lib/metadata/config";
 import Header from "@/components/layout/Header";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
@@ -89,11 +90,14 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-K74NPSVJ');`,
           }}
         />
+        
         {/* End Google Tag Manager */}
+
       </head>
 
       <body className={`${inter.className} mesh-bg min-h-screen`} >
-        {/* Google Tag Manager (noscript) */}
+
+    {/* Google Tag Manager */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K74NPSVJ"
@@ -102,10 +106,25 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        {/* End Google Tag Manager (noscript) */}
+
+         {/* End Google Tag Manager (noscript) */}
         <div className="flex flex-col min-h-screen">
           {children}
         </div>
+
+         {/* GA4 Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4LVCNXYDLT"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-script" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4LVCNXYDLT');
+          `}
+        </Script>
       </body>
     </html>
   );

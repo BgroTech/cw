@@ -18,7 +18,7 @@ export default function AboutPage() {
                 url: "https://codingwallah.in",
                 areaServed: "India"
             }} />
-            
+
             <Header />
             <main>
                 {/* HERO SECTION */}
@@ -72,15 +72,15 @@ export default function AboutPage() {
                             <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 border border-primary/30">
                                 <h3 className="text-2xl font-bold mb-6">What Sets Us Apart?</h3>
                                 <div className="space-y-4">
-                                    <div className="mb-6 p-4 bg-white/5 rounded-lg border border-white/10">
+                                    <div className="mb-6 p-4 bg-muted rounded-lg border">
                                         <p className="font-bold text-primary mb-1">🎯 Practical Learning</p>
                                         <p className="text-sm text-muted-foreground">100% industry-relevant curriculum</p>
                                     </div>
-                                    <div className="mb-6 p-4 bg-white/5 rounded-lg border border-white/10">
+                                    <div className="mb-6 p-4 bg-muted rounded-lg border">
                                         <p className="font-bold text-primary mb-1">🌎 Indian-First Content</p>
                                         <p className="text-sm text-muted-foreground">Hinglish tutorials by Indian developers</p>
                                     </div>
-                                    <div className="p-4 bg-white/5 rounded-lg border border-white/10">
+                                    <div className="p-4 bg-muted rounded-lg border">
                                         <p className="font-bold text-primary mb-1">💯 Completely Free</p>
                                         <p className="text-sm text-muted-foreground">Core content accessible to everyone</p>
                                     </div>
@@ -252,7 +252,7 @@ export default function AboutPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                             <div className="text-center">
-                                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">💪</div>
+                                <div className="w-20 h-20 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">💪</div>
                                 <h3 className="text-xl font-bold mb-2">Practical</h3>
                                 <p className="text-muted-foreground text-sm">Real projects, not just theory. Industry-ready skills, not textbook knowledge.</p>
                             </div>
@@ -264,7 +264,7 @@ export default function AboutPage() {
                             </div>
 
                             <div className="text-center">
-                                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">💯</div>
+                                <div className="w-20 h-20 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">💯</div>
                                 <h3 className="text-xl font-bold mb-2">Honest</h3>
                                 <p className="text-muted-foreground text-sm">No false promises. Real experience. Real results. Transparent about what works.</p>
                             </div>

@@ -27,11 +27,11 @@ export default function Home() {
               Simple, Hinglish tutorials for absolute beginners to pro developers.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <Button href="/blog" variant="primary" className="p-8 text-lg">
-                Explore All Tutorials
+              <Button href="https://codingwallah.classx.co.in/new-courses" variant="primary" className="p-8 text-lg">
+                PAID PRACTICAL COURSES + CERTFICATION 🎓 
               </Button>
               <Button href="/roadmaps" variant="secondary" className="p-8 text-lg">
-                View Career Paths
+                View Career ROADMAPS 🚀
               </Button>
             </div>
           </Container>
@@ -43,11 +43,14 @@ export default function Home() {
             <p className="text-center text-sm font-bold text-muted-foreground mb-6 uppercase tracking-widest">Technologies You Will Master</p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover-grayscale-0 transition-all">
               <span className="text-xl font-bold">Next.js 15</span>
-              <span className="text-xl font-bold">TypeScript</span>
+              <span className="text-xl font-bold">JavaScript / TypeScript</span>
               <span className="text-xl font-bold">React.js</span>
-              <span className="text-xl font-bold">Node.js</span>
+              <span className="text-xl font-bold">Spring Boot / Node.js</span>
               <span className="text-xl font-bold">Google SEO</span>
               <span className="text-xl font-bold">Tailwind CSS</span>
+              <span className="text-xl font-bold">Java</span>
+              <span className="text-xl font-bold">DSA</span>
+              <span className="text-xl font-bold">Java Backend Microservices</span>
             </div>
           </Container>
         </section>
@@ -303,10 +306,10 @@ export default function Home() {
         </section>
 
         {/* FINAL CTA */}
-        <section className="py-24 text-white text-center">
+        <section className="py-16 text-center final-cta">
           <Container>
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-white">Ab Intezaar Kis Baat Ka?</h2>
-            <p className="text-xl mb-12 opacity-90 max-w-2xl mx-auto text-white">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-8">Ab Intezaar Kis Batt Ka?</h2>
+            <p className="text-xl mb-12 max-w-2xl mx-auto">
               Join thousands of students and start building projects that matter.
               Aaj hi apni pehli "Hello World" likhein hamare saath.
             </p>

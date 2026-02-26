@@ -217,11 +217,10 @@ img {
 }
 
 .glass-dark {
-    /* background: hsla(240, 10%, 3.9%, 0.7); */
-    background: hsla(240, 10%, 3.9%, 0.95);
+    background: hsla(var(--card), 0.95);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    border: 1px solid hsl(var(--border));
 }
 
 
@@ -1047,6 +1046,222 @@ button[aria-label="Toggle theme"]:active {
     background-color: hsl(var(--muted));
     border-left-color: hsl(var(--primary));
     padding-left: calc(1rem + 3px);
+}
+
+
+/* Footer Styling - Theme Aware */
+
+.footer-bg {
+    background-color: hsl(24 20% 94%);
+    color: hsl(var(--foreground));
+    transition: background-color 0.3s ease;
+}
+
+html.dark .footer-bg {
+    background-color: hsl(var(--footer-bg));
+    color: white;
+}
+
+
+/* Override text colors in footer for light theme */
+
+.footer-bg .text-white {
+    color: hsl(var(--foreground)) !important;
+}
+
+.footer-bg .text-white\/60 {
+    color: hsl(var(--muted-foreground)) !important;
+}
+
+.footer-bg .text-white\/90 {
+    color: hsl(24 20% 30%) !important;
+}
+
+.footer-bg .text-white\/50 {
+    color: hsl(var(--muted-foreground)) !important;
+}
+
+.footer-bg .text-white\/40 {
+    color: hsl(24 20% 60%) !important;
+}
+
+.footer-bg .text-white\/5 {
+    border-color: hsl(var(--border)) !important;
+}
+
+.footer-bg .text-white\/10 {
+    border-color: hsl(var(--border)) !important;
+}
+
+.footer-bg .bg-white\/5 {
+    background-color: hsl(var(--muted)) !important;
+}
+
+
+/* Dark mode restores white text */
+
+html.dark .footer-bg .text-white {
+    color: white !important;
+}
+
+html.dark .footer-bg .text-white\/60 {
+    color: rgb(255 255 255 / 0.6) !important;
+}
+
+html.dark .footer-bg .text-white\/90 {
+    color: rgb(255 255 255 / 0.9) !important;
+}
+
+html.dark .footer-bg .text-white\/50 {
+    color: rgb(255 255 255 / 0.5) !important;
+}
+
+html.dark .footer-bg .text-white\/40 {
+    color: rgb(255 255 255 / 0.4) !important;
+}
+
+html.dark .footer-bg .bg-white\/5 {
+    background-color: rgb(255 255 255 / 0.05) !important;
+}
+
+
+/* Footer button and link styling */
+
+.footer-bg .btn-white {
+    background-color: white;
+    color: hsl(var(--primary)) !important;
+}
+
+html.dark .footer-bg .btn-white {
+    background-color: white;
+    color: hsl(var(--primary)) !important;
+}
+
+.footer-bg .hover-bg-primary:hover {
+    background-color: hsl(var(--primary)) !important;
+}
+
+.footer-bg a.hover-text-primary:hover {
+    color: hsl(var(--primary)) !important;
+}
+
+
+/* Footer bottom bar text colors */
+
+.footer-bg .text-xs.text-white\/40 {
+    color: hsl(24 20% 60%) !important;
+}
+
+html.dark .footer-bg .text-xs.text-white\/40 {
+    color: rgb(255 255 255 / 0.4) !important;
+}
+
+
+/* Footer border to separate from content in light theme */
+
+.footer-bg {
+    border-top: 1px solid hsl(var(--border));
+}
+
+html.dark .footer-bg {
+    border-top: 1px solid hsl(24 20% 15%);
+}
+
+
+/* Footer input styling for light theme */
+
+.footer-bg input[type="email"] {
+    background-color: hsl(var(--muted)) !important;
+    border-color: hsl(var(--border)) !important;
+    color: hsl(var(--foreground)) !important;
+}
+
+.footer-bg input[type="email"]::placeholder {
+    color: hsl(var(--muted-foreground)) !important;
+}
+
+.footer-bg input[type="email"]:focus {
+    ring-color: hsl(var(--primary)) !important;
+    border-color: hsl(var(--primary)) !important;
+}
+
+html.dark .footer-bg input[type="email"] {
+    background-color: rgb(255 255 255 / 0.05) !important;
+    border-color: rgb(255 255 255 / 0.1) !important;
+    color: white !important;
+}
+
+html.dark .footer-bg input[type="email"]::placeholder {
+    color: rgb(255 255 255 / 0.5) !important;
+}
+
+
+/* Final CTA Section - Transparent with Text Visible */
+
+.final-cta {
+    background-color: transparent;
+    color: hsl(var(--foreground));
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.final-cta .text-white {
+    color: hsl(var(--foreground)) !important;
+}
+
+.final-cta h2 {
+    color: hsl(var(--foreground)) !important;
+}
+
+.final-cta p {
+    color: hsl(var(--muted-foreground)) !important;
+}
+
+.final-cta .btn-white {
+    background-color: hsl(24 20% 10%) !important;
+    background: hsl(24 20% 10%) !important;
+    color: white !important;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.final-cta .btn-white:hover {
+    background-color: hsl(24 20% 10%) !important;
+    background: hsl(24 20% 10%) !important;
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+
+/* Dark theme CTA */
+
+html.dark .final-cta {
+    background-color: transparent;
+    color: white;
+}
+
+html.dark .final-cta .text-white {
+    color: white !important;
+}
+
+html.dark .final-cta h2 {
+    color: white !important;
+}
+
+html.dark .final-cta p {
+    color: rgb(255 255 255 / 0.9) !important;
+}
+
+html.dark .final-cta .btn-white {
+    background-color: white !important;
+    background: white !important;
+    color: hsl(var(--primary)) !important;
+}
+
+html.dark .final-cta .btn-white:hover {
+    background-color: white !important;
+    background: white !important;
+    opacity: 0.95;
 }
 
 
