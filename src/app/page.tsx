@@ -27,11 +27,11 @@ export default function Home() {
               Simple, Hinglish tutorials for absolute beginners to pro developers.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <Button href="https://codingwallah.classx.co.in/new-courses" variant="primary" className="p-8 text-lg">
-                PAID PRACTICAL COURSES + CERTFICATION 🎓 
+              <Button href="/roadmaps" variant="primary" className="p-8 text-lg">
+                View Career Roadmaps 🚀
               </Button>
-              <Button href="/roadmaps" variant="secondary" className="p-8 text-lg">
-                View Career ROADMAPS 🚀
+              <Button href="/blog" variant="secondary" className="p-8 text-lg"> Explore All Tutorials 📚 
+                              {/* PAID PRACTICAL COURSES + CERTFICATION 🎓  */}
               </Button>
             </div>
           </Container>
@@ -313,7 +313,7 @@ export default function Home() {
               Join thousands of students and start building projects that matter.
               Aaj hi apni pehli "Hello World" likhein hamare saath.
             </p>
-            <Button href="/blog" className="p-8 text-xl btn-white border-none ring-offset-primary">
+            <Button href="https://codingwallah.classx.co.in/new-courses" className="p-8 text-xl btn-white border-none ring-offset-primary">
               Chalo Shuru Karte Hain!
             </Button>
           </Container>

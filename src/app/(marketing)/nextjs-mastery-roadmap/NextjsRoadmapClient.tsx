@@ -164,7 +164,7 @@ export default function NextjsRoadmapClient() {
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="sticky top-6 z-20 mb-12 p-6 rounded-2xl shadow-xl glass-dark"
+                    className="sticky top-6 z-20 mb-12 p-6 rounded-2xl shadow-xl glass-dark card"
                 >
                     <div className="flex justify-between items-center mb-4">
                         <h2 className="text-2xl font-bold flex items-center gap-2">
