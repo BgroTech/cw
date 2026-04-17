@@ -18,7 +18,6 @@ export default function AboutPage() {
                 url: "https://codingwallah.in",
                 areaServed: "India"
             }} />
-
             <Header />
             <main>
                 {/* HERO SECTION */}
