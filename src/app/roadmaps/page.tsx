@@ -36,6 +36,13 @@ const paths = [
         topics: ["Core Web Vitals Optimization", "JSON-LD Schema Implementation", "Semantic HTML Structure", "Server-Side Rendering (SSR)"],
         description: "Learn how to make your projects rank on the first page of Google.",
         link: "/seo-for-developers-roadmap"
+    }, 
+    {
+        title: "Spring Boot Mastery",
+        icon: "⚙️",
+        topics: ["Core Java & Java 8 ", "Spring Boot & Spring MVC", "Spring Security", "MySQL & MongoDB"],
+        description: "Build production-ready applications using Java and Spring Boot.",
+        link: "/spring-boot-roadmap"
     }
 
 ];
