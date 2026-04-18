@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import { SITE_CONFIG } from "@/lib/metadata/config";
 import Header from "@/components/layout/Header";
 import Script from "next/script";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
@@ -125,6 +126,7 @@ export default function RootLayout({
             gtag('config', 'G-4LVCNXYDLT');
           `}
         </Script>
+        <WhatsAppButton />
       </body>
     </html>
   );
