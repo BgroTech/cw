@@ -28,9 +28,9 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <Button href="/roadmaps" variant="primary" className="p-8 text-lg">
-                View Career Roadmaps 🚀
+                Career Roadmaps 🚀
               </Button>
-              <Button href="/blog" variant="secondary" className="p-8 text-lg"> Explore All Tutorials 📚 
+              <Button href="https://codingwallah.classx.co.in/new-courses" variant="secondary" className="p-8 text-lg"> PAID Courses 🔥 
                               {/* PAID PRACTICAL COURSES + CERTFICATION 🎓  */}
               </Button>
             </div>
